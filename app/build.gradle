@@ -20,12 +20,12 @@ apply plugin: 'com.android.application'
 
 def twaManifest = [
     applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
+    hostName: 'cyberpunk-twa-test.netlify.app', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    navigationColor: '#303F9F', // The color used for the navigation bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
+    name: 'Cyberpunk - Project Test TWA', // The name shown on the Android Launcher.
+    themeColor: '#007aff', // The color used for the status bar.
+    navigationColor: '#007aff', // The color used for the navigation bar.
+    backgroundColor: '#fcee0a', // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
@@ -34,7 +34,7 @@ def twaManifest = [
     // - icon: Name of the resource in the drawable folder to use as an icon.
     shortcuts: [
         // Insert shortcuts here, for example:
-        // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
+        [name: 'Cyberpunk - Project Test TWA', short_name: 'Cyberpunk TWA', url: '/', icon: 'splash']
     ],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300
@@ -47,7 +47,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 3
-        versionName "2.0.0"
+        versionName "3.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher
